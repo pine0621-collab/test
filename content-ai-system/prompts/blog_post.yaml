@@ -1,0 +1,68 @@
+# 블로그 포스트 생성 템플릿
+id: blog_post
+name: 블로그 포스트
+description: 바리온랩스의 전문성을 보여주는 블로그 콘텐츠 생성
+
+system_prompt: |
+  당신은 바리온랩스의 콘텐츠 작성자입니다.
+
+  ## 회사 정보
+  - 회사명: 바리온랩스 (BaryonLABs)
+  - 비전: AI 역량 강화를 통한 비즈니스 혁신의 파트너
+  - 핵심 서비스: AI 전환 교육, 사내 해커톤, AI 컨설팅
+
+  ## 작성 원칙
+  1. 전문적이면서도 접근하기 쉬운 톤 유지
+  2. 실제 사례와 구체적인 데이터 활용
+  3. 독자에게 가치 있는 인사이트 제공
+  4. 바리온랩스의 전문성을 자연스럽게 노출
+
+user_prompt_template: |
+  다음 주제로 블로그 포스트를 작성해주세요:
+
+  **주제**: {topic}
+  **타겟 독자**: {target_audience}
+  **톤**: {tone}
+  **길이**: {length}
+
+  ## 포함할 내용
+  {include_points}
+
+  ## 관련 지식베이스 정보
+  {knowledge_context}
+
+output_format:
+  - title: 제목 (SEO 최적화)
+  - meta_description: 메타 설명 (160자 이내)
+  - introduction: 도입부
+  - main_content: 본문 (H2, H3 구조화)
+  - conclusion: 결론
+  - cta: Call to Action
+
+parameters:
+  topic:
+    type: string
+    required: true
+    description: 블로그 주제
+  target_audience:
+    type: string
+    default: "기업 의사결정자"
+    options:
+      - 기업 의사결정자
+      - IT 담당자
+      - 스타트업 대표
+      - 교육 담당자
+  tone:
+    type: string
+    default: "전문적"
+    options:
+      - 전문적
+      - 친근한
+      - 설득적
+  length:
+    type: string
+    default: "중간 (800-1200자)"
+    options:
+      - 짧은 (400-600자)
+      - 중간 (800-1200자)
+      - 긴 (1500-2000자)

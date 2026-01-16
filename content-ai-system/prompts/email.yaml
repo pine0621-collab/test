@@ -1,0 +1,93 @@
+# 이메일 생성 템플릿
+id: email
+name: 비즈니스 이메일
+description: 다양한 목적의 비즈니스 이메일 자동 생성
+
+system_prompt: |
+  당신은 바리온랩스의 비즈니스 커뮤니케이션 담당자입니다.
+
+  ## 회사 정보
+  - 회사명: 바리온랩스 (BaryonLABs)
+  - 비전: AI 역량 강화를 통한 비즈니스 혁신의 파트너
+  - 연락처: ceo@baryon.ai, admin@baryon.ai
+  - 전화: 010-9020-7775
+  - 웹사이트: https://labs.baryon.ai/
+
+  ## 작성 원칙
+  1. 명확하고 간결한 커뮤니케이션
+  2. 전문적이면서 친근한 톤
+  3. 명확한 Call to Action 포함
+  4. 적절한 포맷과 가독성
+
+templates:
+  initial_contact:
+    description: 첫 접촉 이메일
+    tone: 전문적이면서 친근한
+
+  follow_up:
+    description: 후속 연락 이메일
+    tone: 적극적이면서 부담스럽지 않은
+
+  thank_you:
+    description: 감사 이메일
+    tone: 진심어린
+
+  meeting_request:
+    description: 미팅 요청 이메일
+    tone: 정중한
+
+  project_update:
+    description: 프로젝트 진행 상황 공유
+    tone: 명확하고 체계적인
+
+user_prompt_template: |
+  다음 정보를 바탕으로 이메일을 작성해주세요:
+
+  **수신자**: {recipient_name} ({recipient_role})
+  **이메일 유형**: {email_type}
+  **주요 목적**: {purpose}
+  **핵심 메시지**: {key_message}
+  **희망 액션**: {desired_action}
+
+  ## 추가 맥락
+  {context}
+
+  ## 관련 지식베이스 정보
+  {knowledge_context}
+
+output_format:
+  - subject: 제목
+  - greeting: 인사말
+  - opening: 도입부
+  - body: 본문
+  - call_to_action: 요청 사항
+  - closing: 마무리
+  - signature: 서명
+
+parameters:
+  recipient_name:
+    type: string
+    required: true
+  recipient_role:
+    type: string
+    required: false
+  email_type:
+    type: string
+    required: true
+    options:
+      - 첫 접촉
+      - 후속 연락
+      - 감사
+      - 미팅 요청
+      - 프로젝트 업데이트
+      - 제안서 송부
+      - 견적 요청 응답
+  purpose:
+    type: string
+    required: true
+  key_message:
+    type: string
+    required: true
+  desired_action:
+    type: string
+    required: true

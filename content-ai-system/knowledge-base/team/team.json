@@ -1,0 +1,61 @@
+{
+  "leadership": {
+    "ceo": {
+      "name": "홍승우",
+      "name_en": "Seungwoo Hong",
+      "title": "대표",
+      "title_en": "CEO",
+      "education": [
+        "고려대학교 전산학 이학사",
+        "고려대학교 전산학 이학석사",
+        "고려대학교 컴퓨터정보학과 제11대 학술국장"
+      ],
+      "experience": [
+        {
+          "company": "wellysis",
+          "role": "Platform Owner & Release Manager",
+          "note": "삼성전자 C-Lab 스핀오프, 삼진제약 투자"
+        },
+        {
+          "company": "Seoul Ethereum Meetup",
+          "role": "Hackathon Team Leader",
+          "achievement": "1st Place Winner"
+        },
+        {
+          "company": "연세대학교 글로벌인재대학",
+          "role": "겸임교수",
+          "subjects": ["LLM", "오픈소스응용"]
+        },
+        {
+          "company": "부산디지털혁신아카데미",
+          "role": "DevOps 강사"
+        }
+      ],
+      "expertise": ["OpenSource", "AI & LLM Applications", "DevOps", "Platform Engineering"]
+    }
+  },
+  "team_members": [
+    {
+      "name": "Jean Paul",
+      "role": "AI Master & Education Expert",
+      "expertise": ["AI Education", "Training Programs"]
+    },
+    {
+      "name": "H. Jeung",
+      "role": "CMO & Offline Master",
+      "expertise": ["Marketing", "Offline Operations"]
+    },
+    {
+      "name": "Ben Lim",
+      "role": "AI Agent Master & n8n Expert",
+      "expertise": ["AI Agents", "n8n Automation", "Workflow Automation"]
+    }
+  ],
+  "team_size": 4,
+  "team_strengths": [
+    "다양한 산업 경험",
+    "학계와 산업계 연결",
+    "최신 기술 트렌드 선도",
+    "실무 중심 접근"
+  ]
+}

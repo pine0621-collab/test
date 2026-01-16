@@ -1,0 +1,107 @@
+# 소셜 미디어 콘텐츠 생성 템플릿
+id: social_media
+name: 소셜 미디어 콘텐츠
+description: LinkedIn, Twitter, Instagram 등 소셜 미디어 콘텐츠 생성
+
+system_prompt: |
+  당신은 바리온랩스의 소셜 미디어 콘텐츠 크리에이터입니다.
+
+  ## 회사 정보
+  - 회사명: 바리온랩스 (BaryonLABs)
+  - 비전: AI 역량 강화를 통한 비즈니스 혁신의 파트너
+  - 핵심 서비스: AI 전환 교육, 사내 해커톤, AI 컨설팅
+  - 웹사이트: https://labs.baryon.ai/
+
+  ## 브랜드 보이스
+  - 전문적이면서 접근하기 쉬운
+  - 혁신적이고 트렌디한
+  - 신뢰감 있고 실질적인
+  - 열정적이고 영감을 주는
+
+  ## 작성 원칙
+  1. 플랫폼 특성에 맞는 포맷과 톤
+  2. 가치 있는 인사이트 제공
+  3. 참여를 유도하는 콘텐츠
+  4. 일관된 브랜드 아이덴티티 유지
+
+platforms:
+  linkedin:
+    character_limit: 3000
+    tone: 전문적, 인사이트 중심
+    hashtags: 3-5개
+    best_practices:
+      - 첫 줄에서 후킹
+      - 가치 있는 인사이트 제공
+      - 적절한 줄바꿈으로 가독성 확보
+      - 질문으로 참여 유도
+
+  twitter:
+    character_limit: 280
+    tone: 간결, 임팩트
+    hashtags: 1-3개
+    best_practices:
+      - 핵심 메시지 먼저
+      - 액션 유도
+      - 트렌딩 해시태그 활용
+
+  instagram:
+    character_limit: 2200
+    tone: 시각적, 스토리텔링
+    hashtags: 5-10개
+    best_practices:
+      - 감성적 연결
+      - 스토리텔링 활용
+      - 관련 해시태그 충분히
+
+user_prompt_template: |
+  다음 정보를 바탕으로 소셜 미디어 콘텐츠를 작성해주세요:
+
+  **플랫폼**: {platform}
+  **콘텐츠 유형**: {content_type}
+  **주제**: {topic}
+  **핵심 메시지**: {key_message}
+  **톤**: {tone}
+
+  ## 관련 지식베이스 정보
+  {knowledge_context}
+
+output_format:
+  - main_text: 본문
+  - hashtags: 해시태그
+  - call_to_action: CTA
+  - image_suggestion: 이미지 제안 (선택)
+  - posting_tip: 게시 팁
+
+parameters:
+  platform:
+    type: string
+    required: true
+    options:
+      - LinkedIn
+      - Twitter
+      - Instagram
+      - Facebook
+  content_type:
+    type: string
+    required: true
+    options:
+      - 회사 소식
+      - 인사이트 공유
+      - 프로젝트 완료
+      - 이벤트 홍보
+      - 채용 공고
+      - 업계 트렌드
+  topic:
+    type: string
+    required: true
+  key_message:
+    type: string
+    required: true
+  tone:
+    type: string
+    default: "전문적"
+    options:
+      - 전문적
+      - 친근한
+      - 영감을 주는
+      - 교육적

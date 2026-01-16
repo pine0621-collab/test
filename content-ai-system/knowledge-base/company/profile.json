@@ -1,0 +1,36 @@
+{
+  "company_name": "바리온랩스",
+  "company_name_en": "BaryonLABs",
+  "founded": "2025",
+  "vision": "AI 역량 강화를 통한 비즈니스 혁신의 파트너",
+  "mission": "단순한 지식 전달을 넘어 실질적인 비즈니스 성과 창출",
+  "tagline": "AI from First Principles",
+  "description": "기본 원리에서 혁명적인 AI 구축. 바리온이 물질의 기초를 형성하듯, 우리는 근본적인 원리에서 변혁적인 AI 기술을 창조합니다.",
+  "contact": {
+    "email": ["ceo@baryon.ai", "admin@baryon.ai"],
+    "phone": "010-9020-7775",
+    "website": "https://labs.baryon.ai/",
+    "main_site": "https://www.baryon.ai/"
+  },
+  "core_values": [
+    "실무 중심의 AI 교육",
+    "집단 지성을 통한 혁신",
+    "비즈니스 성과 창출 중심",
+    "지속적인 기술 트렌드 반영"
+  ],
+  "tech_stack": [
+    "AI", "Machine Learning", "Deep Learning",
+    "Neural Networks", "Transformers",
+    "Quantum Computing", "AGI Development",
+    "LLM Applications", "OpenSource"
+  ],
+  "platform": {
+    "name": "miri.dev",
+    "description": "코드 붙여넣기/드래그&드롭만으로 배포 가능한 플랫폼",
+    "benefits": [
+      "핵심 로직과 창의적 기능 구현에 집중 가능",
+      "빠른 프로토타입 배포",
+      "해커톤 참가팀 지원"
+    ]
+  }
+}

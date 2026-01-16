@@ -1,0 +1,52 @@
+{
+  "faqs": [
+    {
+      "id": "company-intro",
+      "category": "company",
+      "question": "바리온랩스는 어떤 회사인가요?",
+      "answer": "바리온랩스는 AI 역량 강화를 통한 비즈니스 혁신을 돕는 전문 기업입니다. AI 전환 교육, 사내 해커톤, AI 컨설팅 세 가지 핵심 서비스를 제공하며, 단순한 지식 전달을 넘어 실질적인 비즈니스 성과 창출을 목표로 합니다."
+    },
+    {
+      "id": "service-education",
+      "category": "services",
+      "question": "AI 교육 프로그램은 어떻게 진행되나요?",
+      "answer": "각 기업의 산업 특성과 비즈니스 요구에 맞춤형으로 설계됩니다. 전 임직원의 AI 리터러시 함양부터 실무 적용까지 체계적으로 진행하며, 최신 AI 트렌드를 지속적으로 반영합니다."
+    },
+    {
+      "id": "service-hackathon",
+      "category": "services",
+      "question": "사내 해커톤은 어떻게 운영되나요?",
+      "answer": "실제 비즈니스 과제를 기반으로 집단 지성을 활용한 아이디어 발굴과 프로토타입 개발을 진행합니다. 현업 전문가 멘토링과 miri.dev 플랫폼 지원으로 참가팀이 핵심 로직과 창의적 기능 구현에 집중할 수 있습니다."
+    },
+    {
+      "id": "service-consulting",
+      "category": "services",
+      "question": "AI 컨설팅은 어떤 내용을 다루나요?",
+      "answer": "비즈니스 목표 분석부터 AI 도입 전략 수립, 실행 로드맵 설계까지 종합적인 컨설팅을 제공합니다. RAG AI, VLM 등 최신 기술을 활용한 맞춤형 솔루션을 제안합니다."
+    },
+    {
+      "id": "team-ceo",
+      "category": "team",
+      "question": "대표님은 어떤 경력을 가지고 계신가요?",
+      "answer": "홍승우 대표는 고려대학교 전산학 석사 출신으로, wellysis에서 Platform Owner로 활동했으며 Seoul Ethereum Meetup 해커톤 1등 수상 경력이 있습니다. 현재 연세대학교 글로벌인재대학 겸임교수로 LLM과 오픈소스 응용을 가르치고 있습니다."
+    },
+    {
+      "id": "project-portfolio",
+      "category": "projects",
+      "question": "어떤 프로젝트들을 수행했나요?",
+      "answer": "한화생명 임직원 해커톤, 전주대학교 클라우드 교육, 국가유산청 AI 컨설팅 등 금융, 교육, 공공 분야의 다양한 프로젝트를 성공적으로 수행했습니다."
+    },
+    {
+      "id": "platform-miridev",
+      "category": "platform",
+      "question": "miri.dev 플랫폼은 무엇인가요?",
+      "answer": "miri.dev는 코드 붙여넣기와 드래그&드롭만으로 빠르게 배포할 수 있는 플랫폼입니다. 해커톤 참가팀이 인프라 걱정 없이 핵심 로직과 창의적 기능 구현에 집중할 수 있도록 지원합니다."
+    },
+    {
+      "id": "contact-info",
+      "category": "contact",
+      "question": "바리온랩스에 어떻게 연락하나요?",
+      "answer": "이메일 ceo@baryon.ai 또는 admin@baryon.ai로 연락하시거나, 전화 010-9020-7775로 문의해 주세요. 웹사이트 https://labs.baryon.ai/에서도 상담을 신청하실 수 있습니다."
+    }
+  ]
+}
