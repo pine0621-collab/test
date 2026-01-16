@@ -1,0 +1,65 @@
+# 소셜 미디어 자동화 설정
+
+# API 설정
+api:
+  host: "0.0.0.0"
+  port: 8000
+  debug: false
+
+# LLM 설정 (환경변수로 API 키 설정)
+llm:
+  provider: "anthropic"  # anthropic 또는 openai
+  model:
+    anthropic: "claude-sonnet-4-20250514"
+    openai: "gpt-4"
+  max_tokens: 2000
+  temperature: 0.7
+
+# LinkedIn 설정
+linkedin:
+  posting_schedule:
+    days: ["화요일", "수요일", "목요일"]
+    times: ["09:00", "12:00", "17:00"]
+    timezone: "Asia/Seoul"
+  content_types:
+    - thought_leadership
+    - case_study
+    - announcement
+  hashtag_count: 5
+  max_length: 3000
+
+# Instagram 설정
+instagram:
+  posting_schedule:
+    days: ["월요일", "수요일", "금요일"]
+    times: ["12:00", "18:00", "21:00"]
+    timezone: "Asia/Seoul"
+  content_types:
+    - carousel
+    - reels
+    - story
+  hashtag_count: 15
+  caption_max_length: 2200
+
+# n8n 설정
+n8n:
+  webhook_url: ""  # n8n 웹훅 URL
+  workflows:
+    linkedin: "linkedin_auto_post"
+    instagram: "instagram_auto_post"
+
+# 알림 설정
+notifications:
+  slack:
+    enabled: true
+    channel: "#social-media"
+    mention_on_error: "@channel"
+  email:
+    enabled: false
+    recipients: []
+
+# 로깅 설정
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/social_media.log"

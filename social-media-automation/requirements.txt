@@ -1,0 +1,27 @@
+# 소셜 미디어 자동화 시스템 의존성
+
+# Web Framework
+fastapi>=0.100.0
+uvicorn[standard]>=0.22.0
+
+# HTTP Client
+httpx>=0.24.0
+requests>=2.31.0
+
+# Data Processing
+pyyaml>=6.0
+python-dotenv>=1.0.0
+
+# LLM Clients (선택)
+anthropic>=0.25.0
+openai>=1.0.0
+
+# Utilities
+python-dateutil>=2.8.2
+
+# LinkedIn API (선택)
+# linkedin-api>=2.0.0a
+
+# Development
+pytest>=7.0.0
+pytest-asyncio>=0.21.0

@@ -1,0 +1,100 @@
+name: case_study
+platform: linkedin
+description: 프로젝트 성과 및 고객 사례를 공유하는 케이스 스터디 포스트
+category: case_study
+
+structure:
+  hook: |
+    성과 수치나 놀라운 결과로 시작
+    예: "이틀 만에 20개 팀이 AI 프로토타입을 완성했습니다."
+
+  context: |
+    - 고객사 소개 (업종, 규모)
+    - 직면했던 과제/문제
+    - 해결이 필요했던 이유
+
+  solution: |
+    - 바리온랩스의 접근 방식
+    - 적용한 방법론/서비스
+    - 차별화 포인트
+
+  results: |
+    - 구체적인 성과 수치
+    - 고객 후기/인용
+    - 얻은 교훈
+
+  cta: |
+    비슷한 고민을 가진 독자에게 연결 제안
+
+variables:
+  - name: client_name
+    description: 고객사 이름
+    required: true
+  - name: industry
+    description: 고객사 업종
+    required: true
+  - name: challenge
+    description: 고객이 직면했던 과제
+    required: true
+  - name: solution
+    description: 제공한 솔루션
+    required: true
+  - name: results
+    description: 달성한 성과
+    required: true
+  - name: testimonial
+    description: 고객 후기
+    required: false
+
+prompt_template: |
+  당신은 바리온랩스의 마케팅 담당자입니다. LinkedIn에 게시할 고객 성공 사례 포스트를 작성하세요.
+
+  **고객사**: {client_name} ({industry})
+  **과제**: {challenge}
+  **솔루션**: {solution}
+  **성과**: {results}
+  **고객 후기**: {testimonial}
+
+  **작성 가이드라인**:
+  1. 구체적인 숫자와 성과로 신뢰성 확보
+  2. 스토리텔링 형식으로 몰입감 제공
+  3. 고객의 목소리(인용문) 포함
+  4. 겸손하되 자신감 있는 톤
+  5. 해시태그 3-5개 포함
+  6. 총 길이: 1,500자 이내
+
+  **포함할 해시태그**:
+  #AI성공사례 #바리온랩스 #AI컨설팅 #디지털전환
+
+example_output: |
+  "퀄리티 높은 결과물 도출"
+
+  한화생명 담당자분의 해커톤 후 피드백입니다.
+
+  📍 배경
+  한화생명은 임직원들의 AI 역량 강화와 함께
+  실제 업무에 적용 가능한 AI 서비스 아이디어를 찾고 있었습니다.
+
+  📍 우리의 접근
+  바리온랩스는 단순 교육이 아닌 '만들면서 배우는' 해커톤을 제안했습니다.
+
+  ✅ 비봇코딩 환경 제공 → 개발 경험 없이도 참여 가능
+  ✅ miri.dev 플랫폼 활용 → 배포까지 원스톱
+  ✅ 현업 전문가 멘토링 → 실현 가능한 방향 제시
+
+  📍 결과
+  • 참가 팀: 20개 팀
+  • 기간: 2일
+  • 산출물: 20개의 AI 프로토타입
+
+  가장 인상적이었던 것은
+  비개발자분들이 직접 AI 서비스를 구현해냈다는 점입니다.
+
+  "우리도 할 수 있다"는 자신감,
+  이것이 AI 전환의 시작입니다.
+
+  ---
+  귀사도 임직원 AI 역량 강화가 필요하시다면,
+  바리온랩스와 함께 해커톤을 기획해보세요.
+
+  #한화생명 #AI해커톤 #바리온랩스 #AI교육 #디지털혁신

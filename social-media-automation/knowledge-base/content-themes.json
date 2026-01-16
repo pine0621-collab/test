@@ -1,0 +1,93 @@
+{
+  "content_pillars": [
+    {
+      "id": "thought_leadership",
+      "name": "AI 인사이트",
+      "description": "AI 트렌드, 기술 인사이트, 업계 분석",
+      "frequency": "weekly",
+      "platforms": ["linkedin", "instagram"],
+      "topics": [
+        "생성형 AI 활용 팁",
+        "AI 도입 성공/실패 사례",
+        "최신 AI 트렌드 분석",
+        "AI 윤리 및 거버넌스"
+      ]
+    },
+    {
+      "id": "case_study",
+      "name": "성공 사례",
+      "description": "프로젝트 성과, 고객 후기, 비포/애프터",
+      "frequency": "bi-weekly",
+      "platforms": ["linkedin", "instagram"],
+      "topics": [
+        "프로젝트 성과 공유",
+        "고객사 인터뷰",
+        "해커톤 결과물 소개",
+        "교육 성과 리포트"
+      ]
+    },
+    {
+      "id": "behind_the_scenes",
+      "name": "비하인드 스토리",
+      "description": "팀 문화, 일하는 방식, 회사 소식",
+      "frequency": "weekly",
+      "platforms": ["instagram"],
+      "topics": [
+        "팀 소개",
+        "오피스 일상",
+        "프로젝트 진행 과정",
+        "팀 빌딩 활동"
+      ]
+    },
+    {
+      "id": "educational",
+      "name": "교육 콘텐츠",
+      "description": "AI 팁, 튜토리얼, How-to 가이드",
+      "frequency": "weekly",
+      "platforms": ["linkedin", "instagram"],
+      "topics": [
+        "AI 도구 사용법",
+        "프롬프트 엔지니어링 팁",
+        "생산성 향상 노하우",
+        "코딩 없이 AI 활용하기"
+      ]
+    },
+    {
+      "id": "announcement",
+      "name": "공지/이벤트",
+      "description": "서비스 런칭, 이벤트, 채용 공고",
+      "frequency": "as_needed",
+      "platforms": ["linkedin", "instagram"],
+      "topics": [
+        "새 서비스 런칭",
+        "웨비나/세미나 안내",
+        "채용 공고",
+        "파트너십 발표"
+      ]
+    }
+  ],
+  "posting_schedule": {
+    "linkedin": {
+      "best_times": ["09:00", "12:00", "17:00"],
+      "best_days": ["화요일", "수요일", "목요일"],
+      "frequency": "3-4회/주"
+    },
+    "instagram": {
+      "best_times": ["12:00", "18:00", "21:00"],
+      "best_days": ["월요일", "수요일", "금요일"],
+      "frequency": "4-5회/주"
+    }
+  },
+  "tone_of_voice": {
+    "linkedin": {
+      "style": "professional",
+      "characteristics": ["전문적", "인사이트 중심", "가치 제공", "신뢰감"],
+      "language": "존댓말, 격식체"
+    },
+    "instagram": {
+      "style": "friendly",
+      "characteristics": ["친근함", "시각적", "트렌디", "참여 유도"],
+      "language": "존댓말, 캐주얼"
+    }
+  }
+}

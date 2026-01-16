@@ -1,0 +1,82 @@
+name: thought_leadership
+platform: linkedin
+description: AI 인사이트 및 전문 지식 공유를 위한 Thought Leadership 포스트
+category: thought_leadership
+
+structure:
+  hook: |
+    첫 문장에서 독자의 관심을 끄는 질문이나 통계로 시작
+    예: "AI를 도입한 기업의 70%가 1년 내 ROI를 달성하지 못합니다. 왜일까요?"
+
+  body: |
+    - 핵심 인사이트 3-5개 제시
+    - 각 포인트는 간결하게 (2-3문장)
+    - 구체적인 예시나 데이터 포함
+    - 줄바꿈으로 가독성 확보
+
+  cta: |
+    행동 유도 질문으로 마무리
+    예: "여러분 회사의 AI 도입 경험은 어떠셨나요? 댓글로 공유해주세요!"
+
+variables:
+  - name: topic
+    description: 다룰 AI 관련 주제
+    required: true
+  - name: key_insight
+    description: 핵심 인사이트 또는 주장
+    required: true
+  - name: supporting_points
+    description: 뒷받침하는 포인트들 (3-5개)
+    required: true
+  - name: example
+    description: 구체적인 사례나 경험
+    required: false
+  - name: cta_question
+    description: 참여를 유도하는 질문
+    required: true
+
+prompt_template: |
+  당신은 바리온랩스의 AI 전문가입니다. LinkedIn에 게시할 Thought Leadership 포스트를 작성하세요.
+
+  **주제**: {topic}
+  **핵심 인사이트**: {key_insight}
+  **뒷받침 포인트**: {supporting_points}
+  **사례 (있다면)**: {example}
+  **CTA 질문**: {cta_question}
+
+  **작성 가이드라인**:
+  1. 첫 문장은 호기심을 자극하는 후크로 시작
+  2. 본문은 짧은 단락과 줄바꿈으로 가독성 확보
+  3. 전문적이면서도 접근 가능한 톤 유지
+  4. 이모지는 절제하여 사용 (문장 시작에 1-2개)
+  5. 해시태그는 본문 하단에 3-5개 배치
+  6. 총 길이: 1,300자 이내 (LinkedIn 최적)
+
+  **포함할 해시태그**:
+  #AI #인공지능 #바리온랩스 #AI전환 #디지털혁신
+
+example_output: |
+  "AI를 도입하면 모든 것이 해결된다"
+
+  이 말을 믿으셨다면, 지금 현실을 마주하고 계실 겁니다.
+
+  지난 1년간 50개 기업의 AI 도입 사례를 분석하며 깨달은 진실:
+
+  1️⃣ 기술보다 문화가 먼저입니다
+  아무리 좋은 AI 도구도 조직이 받아들이지 않으면 무용지물입니다.
+
+  2️⃣ 작게 시작하되, 명확한 목표를 가져야 합니다
+  "AI 도입"이 아닌 "월 40시간의 수작업 보고서 자동화"처럼요.
+
+  3️⃣ 교육 없는 도입은 실패의 지름길입니다
+  도구를 주기 전에, 도구를 쓸 수 있는 역량을 먼저 키워야 합니다.
+
+  바리온랩스가 한화생명 해커톤에서 목격한 것:
+  단 이틀 만에 현업 담당자들이 AI 프로토타입을 직접 만들어냈습니다.
+  비결은? 적절한 교육과 명확한 방향 제시였습니다.
+
+  여러분 회사의 AI 도입 여정은 어떻게 시작되었나요?
+  가장 큰 도전은 무엇이었는지 댓글로 공유해주세요!
+
+  ---
+  #AI전환 #디지털혁신 #AI교육 #바리온랩스 #기업AI도입
