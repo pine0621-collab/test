@@ -1,0 +1,61 @@
+{
+  "services": [
+    {
+      "id": "ai-education",
+      "name": "AI 전환 교육",
+      "name_en": "AI Transformation Education",
+      "category": "education",
+      "description": "전 임직원의 AI 리터러시 함양 및 실무 적용을 위한 맞춤형 교육",
+      "target_audience": ["기업 임직원", "대학생", "공공기관 직원"],
+      "key_features": [
+        "각 기업의 산업 특성과 비즈니스 요구에 맞춤",
+        "최신 AI 트렌드 지속 반영",
+        "실무 적용 중심의 커리큘럼",
+        "LLM 및 오픈소스 응용 교육"
+      ],
+      "deliverables": [
+        "AI 리터러시 향상",
+        "실무 AI 도구 활용 능력",
+        "AI 프로젝트 기획 역량"
+      ]
+    },
+    {
+      "id": "hackathon",
+      "name": "사내 해커톤",
+      "name_en": "Corporate Hackathon",
+      "category": "innovation",
+      "description": "집단 지성을 통한 아이디어 발굴 및 빠른 프로토타입 검증",
+      "target_audience": ["기업 내부 팀", "스타트업", "교육기관"],
+      "key_features": [
+        "실제 비즈니스 과제 해결",
+        "현업 전문가 멘토링",
+        "miri.dev 플랫폼 지원",
+        "빠른 프로토타입 배포"
+      ],
+      "deliverables": [
+        "혁신적인 아이디어 도출",
+        "실제 작동하는 프로토타입",
+        "팀 협업 역량 강화"
+      ]
+    },
+    {
+      "id": "ai-consulting",
+      "name": "AI 컨설팅",
+      "name_en": "AI Consulting",
+      "category": "consulting",
+      "description": "비즈니스 목표에 최적화된 AI 도입 전략 및 로드맵 수립",
+      "target_audience": ["기업 경영진", "IT 부서", "공공기관"],
+      "key_features": [
+        "비즈니스 목표 분석",
+        "AI 도입 전략 수립",
+        "로드맵 설계",
+        "RAG AI, VLM 등 최신 기술 제안"
+      ],
+      "deliverables": [
+        "AI 도입 전략 보고서",
+        "실행 로드맵",
+        "기술 아키텍처 제안"
+      ]
+    }
+  ]
+}

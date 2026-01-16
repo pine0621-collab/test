@@ -1,0 +1,121 @@
+# 회사 소개 콘텐츠 생성 템플릿
+id: company_intro
+name: 회사 소개
+description: 다양한 상황에 맞는 회사 소개 콘텐츠 생성
+
+system_prompt: |
+  당신은 바리온랩스의 회사 소개 콘텐츠 전문가입니다.
+
+  ## 회사 핵심 정보
+  - 회사명: 바리온랩스 (BaryonLABs)
+  - 설립: 2025년
+  - 비전: AI 역량 강화를 통한 비즈니스 혁신의 파트너
+  - 미션: 단순한 지식 전달을 넘어 실질적인 비즈니스 성과 창출
+  - 연락처: ceo@baryon.ai, 010-9020-7775
+  - 웹사이트: https://labs.baryon.ai/
+
+  ## 핵심 서비스
+  1. AI 전환 교육 - 맞춤형 AI 리터러시 교육
+  2. 사내 해커톤 - 집단 지성 기반 혁신
+  3. AI 컨설팅 - 전략 수립 및 로드맵 설계
+
+  ## 대표 이력 (홍승우)
+  - 고려대학교 전산학 석사
+  - wellysis Platform Owner (삼성 C-Lab 스핀오프)
+  - Seoul Ethereum Meetup 해커톤 1위
+  - 연세대학교 글로벌인재대학 겸임교수
+
+  ## 주요 실적
+  - 한화생명 임직원 해커톤
+  - 전주대학교 클라우드 교육
+  - 국가유산청 AI 컨설팅
+
+  ## 작성 원칙
+  1. 상황에 맞는 길이와 깊이 조절
+  2. 핵심 가치와 차별점 명확히 전달
+  3. 신뢰감을 주는 구체적 실적 언급
+  4. 행동을 유도하는 마무리
+
+intro_versions:
+  elevator_pitch:
+    length: "30초 (100자 이내)"
+    focus: 핵심 가치 한 문장
+
+  short:
+    length: "1분 (300자 이내)"
+    focus: 핵심 서비스와 차별점
+
+  standard:
+    length: "3분 (800자 이내)"
+    focus: 서비스, 팀, 실적 포함
+
+  detailed:
+    length: "5분 이상 (1500자+)"
+    focus: 전체 정보 종합
+
+user_prompt_template: |
+  다음 상황에 맞는 회사 소개를 작성해주세요:
+
+  **상황**: {situation}
+  **대상**: {audience}
+  **버전**: {version}
+  **강조점**: {emphasis}
+  **톤**: {tone}
+
+  ## 관련 지식베이스 정보
+  {knowledge_context}
+
+output_format:
+  - intro: 회사 소개 본문
+  - key_points: 핵심 포인트 (불릿)
+  - contact_info: 연락처 정보
+  - suggested_follow_up: 후속 대화 제안
+
+parameters:
+  situation:
+    type: string
+    required: true
+    options:
+      - 네트워킹 행사
+      - 고객 미팅
+      - 투자자 피칭
+      - 채용 설명
+      - 파트너십 제안
+      - 언론 인터뷰
+      - 웹사이트
+  audience:
+    type: string
+    required: true
+    options:
+      - 기업 의사결정자
+      - 기술 담당자
+      - 투자자
+      - 구직자
+      - 파트너사
+      - 일반 대중
+  version:
+    type: string
+    required: true
+    options:
+      - elevator_pitch
+      - short
+      - standard
+      - detailed
+  emphasis:
+    type: string
+    default: "종합"
+    options:
+      - AI 교육 역량
+      - 해커톤 운영 경험
+      - 컨설팅 전문성
+      - 대표 이력
+      - 프로젝트 실적
+      - 종합
+  tone:
+    type: string
+    default: "전문적"
+    options:
+      - 전문적
+      - 친근한
+      - 열정적
+      - 격식있는

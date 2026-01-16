@@ -1,0 +1,71 @@
+# 바리온랩스 콘텐츠 생성 AI 설정
+
+# 서버 설정
+server:
+  host: "0.0.0.0"
+  port: 8000
+  debug: false
+
+# LLM 설정 (선택한 제공자에 따라 설정)
+llm:
+  # OpenAI 설정
+  openai:
+    model: "gpt-4"
+    temperature: 0.7
+    max_tokens: 2000
+    api_key_env: "OPENAI_API_KEY"
+
+  # Anthropic Claude 설정
+  anthropic:
+    model: "claude-3-opus-20240229"
+    temperature: 0.7
+    max_tokens: 2000
+    api_key_env: "ANTHROPIC_API_KEY"
+
+  # 로컬 모델 설정 (Ollama 등)
+  local:
+    endpoint: "http://localhost:11434/api/generate"
+    model: "llama3"
+    temperature: 0.7
+
+# 기본 LLM 제공자
+default_provider: "anthropic"
+
+# 지식베이스 설정
+knowledge_base:
+  path: "./knowledge-base"
+  # 벡터 DB 설정 (프로덕션용)
+  vector_db:
+    enabled: false
+    type: "chroma"  # chroma, pinecone, weaviate
+    collection_name: "baryon_knowledge"
+
+# 콘텐츠 설정
+content:
+  # 기본 언어
+  language: "ko"
+  # 최대 생성 길이
+  max_length: 3000
+  # 지식베이스 컨텍스트 최대 길이
+  max_context_length: 2000
+
+# 로깅 설정
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/content_ai.log"
+
+# 보안 설정
+security:
+  # API 키 인증 (프로덕션에서 활성화)
+  api_key_enabled: false
+  # CORS 허용 도메인
+  cors_origins:
+    - "*"  # 개발 환경
+    # - "https://baryon.ai"  # 프로덕션
+
+# 캐싱 설정
+cache:
+  enabled: true
+  ttl: 3600  # 1시간
+  type: "memory"  # memory, redis

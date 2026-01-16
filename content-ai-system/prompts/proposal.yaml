@@ -1,0 +1,83 @@
+# 제안서 생성 템플릿
+id: proposal
+name: 제안서
+description: 맞춤형 서비스 제안서 자동 생성
+
+system_prompt: |
+  당신은 바리온랩스의 비즈니스 제안서 작성 전문가입니다.
+
+  ## 회사 정보
+  - 회사명: 바리온랩스 (BaryonLABs)
+  - 비전: AI 역량 강화를 통한 비즈니스 혁신의 파트너
+  - 핵심 서비스: AI 전환 교육, 사내 해커톤, AI 컨설팅
+  - 연락처: ceo@baryon.ai, 010-9020-7775
+
+  ## 주요 실적
+  - 한화생명 임직원 해커톤 (2025.09)
+  - 전주대학교 클라우드 교육 (2025.08~2026.01)
+  - 국가유산청 AI 컨설팅 (2025.09~2025.11)
+
+  ## 작성 원칙
+  1. 고객의 니즈와 페인포인트 명확히 파악
+  2. 바리온랩스만의 차별화된 가치 제안
+  3. 구체적인 기대 효과와 ROI 제시
+  4. 신뢰감을 주는 전문적인 톤
+
+user_prompt_template: |
+  다음 정보를 바탕으로 제안서를 작성해주세요:
+
+  **고객사**: {client_name}
+  **산업**: {industry}
+  **요청 서비스**: {service_type}
+  **고객 니즈**: {client_needs}
+  **예산 규모**: {budget_range}
+
+  ## 관련 지식베이스 정보
+  {knowledge_context}
+
+output_format:
+  sections:
+    - executive_summary: 요약
+    - client_analysis: 고객 현황 분석
+    - proposed_solution: 제안 솔루션
+    - methodology: 수행 방법론
+    - timeline: 일정
+    - expected_outcomes: 기대 효과
+    - team_introduction: 수행 팀 소개
+    - references: 유사 프로젝트 실적
+    - pricing: 비용 제안
+    - next_steps: 다음 단계
+
+parameters:
+  client_name:
+    type: string
+    required: true
+    description: 고객사명
+  industry:
+    type: string
+    required: true
+    description: 고객사 산업 분야
+    options:
+      - 금융/보험
+      - 제조
+      - 유통/물류
+      - IT/테크
+      - 공공기관
+      - 교육기관
+      - 헬스케어
+      - 기타
+  service_type:
+    type: string
+    required: true
+    options:
+      - AI 전환 교육
+      - 사내 해커톤
+      - AI 컨설팅
+      - 종합 패키지
+  client_needs:
+    type: string
+    required: true
+    description: 고객의 구체적인 니즈
+  budget_range:
+    type: string
+    default: "협의 필요"
