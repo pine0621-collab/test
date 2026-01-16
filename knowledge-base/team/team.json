@@ -1,0 +1,70 @@
+{
+  "team": {
+    "total_members": 4,
+    "leadership": [
+      {
+        "name": {
+          "korean": "홍승우",
+          "english": "Seungwoo Hong"
+        },
+        "position": "CEO / 대표",
+        "email": "ceo@baryon.ai",
+        "education": [
+          {
+            "institution": "고려대학교",
+            "degree": "전산학 이학사"
+          },
+          {
+            "institution": "고려대학교",
+            "degree": "전산학 이학석사"
+          }
+        ],
+        "academic_activities": [
+          "고려대학교 컴퓨터정보학과 제11대 학술국장"
+        ],
+        "experience": [
+          {
+            "company": "wellysis",
+            "role": "Platform Owner & Release Manager",
+            "note": "삼성전자 C-Lab 스핀오프, 삼진제약 투자"
+          },
+          {
+            "organization": "Seoul Ethereum Meetup",
+            "role": "Hackathon Team Leader",
+            "achievement": "1st Place Winner"
+          },
+          {
+            "institution": "연세대학교 글로벌인재대학",
+            "role": "겸임교수",
+            "subjects": ["LLM", "오픈소스응용"]
+          },
+          {
+            "institution": "부산디지털혁신아카데미",
+            "role": "DevOps 강사"
+          }
+        ],
+        "expertise": [
+          "OpenSource",
+          "AI & LLM Applications"
+        ]
+      }
+    ],
+    "members": [
+      {
+        "name": "Jean Paul",
+        "role": "AI 마스터 & 교육 전문가",
+        "expertise": ["AI", "교육"]
+      },
+      {
+        "name": "H. Jeung",
+        "role": "CMO 및 오프라인 마스터",
+        "expertise": ["마케팅", "오프라인 이벤트"]
+      },
+      {
+        "name": "Ben Lim",
+        "role": "AI 에이전트 마스터 & n8n 전문가",
+        "expertise": ["AI Agent", "n8n", "자동화"]
+      }
+    ]
+  }
+}

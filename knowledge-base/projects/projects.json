@@ -1,0 +1,88 @@
+{
+  "projects": [
+    {
+      "id": "hanwha-life-2025",
+      "client": {
+        "name": "한화생명",
+        "type": "대기업",
+        "industry": "금융/보험"
+      },
+      "period": {
+        "start": "2025-09",
+        "end": "2025-09"
+      },
+      "service_type": "hackathon",
+      "title": "임직원 해커톤",
+      "description": "비봇코딩 활용한 AI 서비스 프로토타입 개발",
+      "highlights": [
+        "비봇코딩 활용",
+        "AI 서비스 프로토타입 개발"
+      ],
+      "testimonial": {
+        "content": "퀄리티 높은 결과물 도출",
+        "source": "한화생명"
+      }
+    },
+    {
+      "id": "jeonju-univ-2025",
+      "client": {
+        "name": "전주대학교",
+        "type": "대학",
+        "industry": "교육"
+      },
+      "period": {
+        "start": "2025-08",
+        "end": "2026-01"
+      },
+      "service_type": "education",
+      "title": "오프라인 클라우드 교육",
+      "description": "전북형 클라우드 기반 오픈AI 서울 교육",
+      "highlights": [
+        "전북형 클라우드 기반",
+        "오픈AI 서울 교육"
+      ]
+    },
+    {
+      "id": "kha-2025",
+      "client": {
+        "name": "국가유산청",
+        "type": "정부기관",
+        "industry": "공공"
+      },
+      "period": {
+        "start": "2025-09",
+        "end": "2025-11"
+      },
+      "service_type": "consulting",
+      "title": "AI 컨설팅 및 PM업무",
+      "description": "정부기관의 업무 분석 및 잠정적 RAG AI VLM 제안",
+      "highlights": [
+        "정부기관 업무 분석",
+        "RAG AI VLM 제안"
+      ]
+    }
+  ],
+  "testimonials": [
+    {
+      "client": "한화생명",
+      "content": "퀄리티 높은 결과물 도출",
+      "project_type": "해커톤"
+    },
+    {
+      "client": "크라우드웍스",
+      "content": "팀별 산출물이 잘 도출될 수 있는 충실한 멘토링",
+      "project_type": "해커톤/멘토링"
+    },
+    {
+      "client": "Y-Ventures CEO",
+      "content": "값진 시간, 많은 분들이 배웠으리라 생각",
+      "project_type": "교육"
+    }
+  ],
+  "client_types": {
+    "enterprise": ["한화생명"],
+    "education": ["전주대학교"],
+    "government": ["국가유산청"],
+    "startup": ["크라우드웍스", "Y-Ventures"]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "knowledge_base": {
+    "name": "바리온랩스 AI 지식베이스",
+    "version": "1.0.0",
+    "created_at": "2026-01-16",
+    "description": "바리온랩스 회사소개서 기반 AI 지식베이스",
+    "company": "BaryonLABs",
+    "structure": {
+      "company": {
+        "path": "./company/",
+        "files": [
+          "company-profile.json",
+          "company-overview.md"
+        ],
+        "description": "회사 기본 정보, 비전, 연락처 등"
+      },
+      "services": {
+        "path": "./services/",
+        "files": [
+          "services.json",
+          "services-overview.md"
+        ],
+        "description": "AI 전환 교육, 사내 해커톤, AI 컨설팅 서비스 정보"
+      },
+      "team": {
+        "path": "./team/",
+        "files": [
+          "team.json",
+          "team-overview.md"
+        ],
+        "description": "팀 구성, 리더십, 전문 분야"
+      },
+      "projects": {
+        "path": "./projects/",
+        "files": [
+          "projects.json",
+          "projects-portfolio.md"
+        ],
+        "description": "프로젝트 실적, 고객사, 후기"
+      },
+      "faq": {
+        "path": "./faq/",
+        "files": [
+          "faq.json",
+          "faq.md"
+        ],
+        "description": "자주 묻는 질문과 답변"
+      }
+    },
+    "usage": {
+      "ai_integration": {
+        "description": "AI 챗봇 또는 RAG 시스템에서 활용 가능",
+        "recommended_approach": [
+          "JSON 파일을 구조화된 데이터로 활용",
+          "MD 파일을 컨텍스트로 활용",
+          "FAQ를 우선 검색하여 빠른 응답 제공"
+        ]
+      }
+    }
+  }
+}

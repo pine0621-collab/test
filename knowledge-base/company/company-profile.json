@@ -1,0 +1,47 @@
+{
+  "company": {
+    "name": {
+      "korean": "바리온랩스",
+      "english": "BaryonLABs"
+    },
+    "founded": "2025",
+    "employees": 4,
+    "vision": "AI 역량 강화를 통한 비즈니스 혁신의 파트너",
+    "mission": "단순한 지식 전달을 넘어 실질적인 비즈니스 성과 창출",
+    "tagline": "Building revolutionary AI from core elements",
+    "description": "기본 원리에서 혁명적인 AI를 구축합니다. 바리온이 물질의 기초를 형성하듯, 우리는 근본적인 원리로부터 혁신적인 AI 기술을 창조합니다.",
+    "contact": {
+      "email": {
+        "ceo": "ceo@baryon.ai",
+        "admin": "admin@baryon.ai"
+      },
+      "phone": "010-9020-7775",
+      "website": {
+        "main": "https://www.baryon.ai/",
+        "labs": "https://labs.baryon.ai/"
+      }
+    },
+    "expertise": [
+      "AI",
+      "Machine Learning",
+      "Deep Learning",
+      "Neural Networks",
+      "Transformers",
+      "Quantum Computing",
+      "AGI Development",
+      "LLM Applications",
+      "OpenSource"
+    ],
+    "platforms": [
+      {
+        "name": "miri.dev",
+        "description": "코드 붙여넣기/드래그&드롭만으로 배포 가능한 플랫폼",
+        "features": [
+          "간편한 배포",
+          "핵심 로직 구현에 집중",
+          "해커톤 지원 최적화"
+        ]
+      }
+    ]
+  }
+}
