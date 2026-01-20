@@ -1,0 +1,39 @@
+# 매일 오전 9시 대기목록 알림 워크플로우
+# 한국 시간 오전 9시 = UTC 0시
+
+name: Morning Todo Notification
+
+on:
+  schedule:
+    # 한국 시간 오전 9시 (UTC 0시)
+    - cron: '0 0 * * *'
+  # 수동 실행도 가능
+  workflow_dispatch:
+
+jobs:
+  send-notification:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Send morning notification
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SLACK_CHANNEL: ${{ secrets.SLACK_CHANNEL }}
+        run: |
+          python scripts/send_morning_notification.py
+
+      - name: Log success
+        if: success()
+        run: echo "Morning notification sent successfully at $(date)"
+
+      - name: Log failure
+        if: failure()
+        run: echo "Failed to send morning notification at $(date)"

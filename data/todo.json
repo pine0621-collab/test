@@ -1,0 +1,22 @@
+{
+  "pending_tasks": [
+    {
+      "id": 1,
+      "task": "오늘 만든 영상콘텐츠 - 국민성장펀드 ABQ - 업로드",
+      "category": "콘텐츠",
+      "priority": "high",
+      "due_date": "2026-01-21",
+      "created_at": "2026-01-20"
+    },
+    {
+      "id": 2,
+      "task": "GSC영상검수 & 재촬영",
+      "category": "콘텐츠",
+      "priority": "high",
+      "due_date": "2026-01-21",
+      "created_at": "2026-01-20"
+    }
+  ],
+  "completed_tasks": [],
+  "last_updated": "2026-01-20T00:00:00+09:00"
+}
