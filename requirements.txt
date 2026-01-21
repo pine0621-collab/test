@@ -1,0 +1,7 @@
+# 아침 증시 알림 시스템 의존성
+yfinance>=0.2.36          # 야후 파이낸스 API (증시 데이터)
+slack-sdk>=3.27.0         # Slack 메시지 전송
+apscheduler>=3.10.4       # 스케줄링 (매일 아침 실행)
+python-dotenv>=1.0.0      # 환경변수 관리
+requests>=2.31.0          # HTTP 요청
+pytz>=2024.1              # 타임존 처리
